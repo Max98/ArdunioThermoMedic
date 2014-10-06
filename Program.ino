@@ -79,6 +79,7 @@ void setup(){
         lcd.begin(16, 2);
         pinMode(LeftButtonPin, INPUT); 
         pinMode(RightButtonPin, INPUT); 
+        pinMode(OkButtonPin, INPUT); 
       	i2c_init(); //Initialise the i2c bus
 	PORTC = (1 << PORTC4) | (1 << PORTC5);//enable pullups
 }
